@@ -8,19 +8,19 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix base: <http://tib.de/ontario/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix iasis: <http://project-iasis.eu/vocab/> .
+@prefix sdmkgc: <https://github.com/SDM-TIB/KGC/vocab/> .
 
-<#Class1>
+<drug_disorder_TriplesMap1>
 	rml:logicalSource [ rml:source "/app/data/drugs_disorders.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://project-iasis.eu/Disorder/{disorder_Id}";
+		rr:template "https://github.com/SDM-TIB/KGC/entity/{disorder_Id}";
 	];
 	rr:predicateObjectMap [
-		rr:predicate iasis:hasIndication;
+		rr:predicate sdmkgc:hasIndication;
 		rr:objectMap [
-			rr:template "http://project-iasis.eu/Drug/{DrugId}";
+			rr:template "https://github.com/SDM-TIB/KGC/entity/{DrugId}";
 		]
 	].
 

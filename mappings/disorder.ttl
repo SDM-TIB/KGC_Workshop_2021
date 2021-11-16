@@ -8,26 +8,20 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix base: <http://tib.de/ontario/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix iasis: <http://project-iasis.eu/vocab/> .
+@prefix sdmkgc: <https://github.com/SDM-TIB/KGC/vocab/> .
 
-<#Class1>
+<disorder_TriplesMap1>
 	rml:logicalSource [ rml:source "/app/data/disorders.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "http://project-iasis.eu/Disorder/{ID}";
-		rr:class iasis:Disorder
+		rr:template "https://github.com/SDM-TIB/KGC/entoty/{ID}";
+		rr:class sdmkgc:Disorder
 	];
 	rr:predicateObjectMap [
-		rr:predicate iasis:disorderLabel;
+		rr:predicate sdmkgc:disorderLabel;
 		rr:objectMap [ 
 			rml:reference "name" 
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate iasis:disorderCuiID;
-		rr:objectMap [ 
-			rml:reference "ID" 
 		]
 	];
 	rr:predicateObjectMap [
