@@ -29,7 +29,15 @@
 	rr:predicateObjectMap [
 		rr:predicate owl:sameAs;
         rr:objectMap <FalconDBpedia-Function> ;
-	].
+	];
+    rr:predicateObjectMap [
+        rr:predicate owl:sameAs;
+        rr:objectMap <FalconWikipedia-Function> ;
+    ];
+    rr:predicateObjectMap [
+        rr:predicate sio:SIO_000255;
+        rr:objectMap <UMLSFunction> ;
+    ].
 
 ##########################################################################################
 ######################################## Functions #######################################
@@ -37,13 +45,78 @@
 
 <FalconDBpedia-Function>
     fnml:functionValue [
-        rml:logicalSource [ rml:source "/networkConnectivity_exp_data/drug.csv";
+        rml:logicalSource [ rml:source "/app/data/drugs.csv";
         rml:referenceFormulation ql:CSV 
                             ];
         rr:predicateObjectMap [
             rr:predicate fno:executes ;
             rr:objectMap [ 
                 rr:constant eablock:falcon_dbpedia_function 
+            ]
+        ];
+        rr:predicateObjectMap [
+            rr:predicate eablock:value;
+            rr:objectMap [ 
+                rml:reference "DrugName" 
+            ] 
+        ];    
+    ].
+
+#####
+
+<FalconWikipedia-Function>
+    fnml:functionValue [
+        rml:logicalSource [ rml:source "/app/data/drugs.csv";
+        rml:referenceFormulation ql:CSV 
+                            ];
+        rr:predicateObjectMap [
+            rr:predicate fno:executes ;
+            rr:objectMap [ 
+                rr:constant eablock:falcon_wikipedia_function 
+            ]
+        ];
+        rr:predicateObjectMap [
+            rr:predicate eablock:value;
+            rr:objectMap [ 
+                rml:reference "DrugName" 
+            ] 
+        ];    
+    ].           
+
+#######
+
+<UMLSFunction>
+    fnml:functionValue [
+        rml:logicalSource [ rml:source "/app/data/drugs.csv";
+        rml:referenceFormulation ql:CSV 
+                            ];
+        rr:predicateObjectMap [
+            rr:predicate fno:executes ;
+            rr:objectMap [ 
+                rr:constant eablock:concat2 
+            ]
+        ];
+        rr:predicateObjectMap [
+            rr:predicate eablock:value1;
+            rr:objectMap [ 
+                rr:constant "http://www.EABlock.com/Annotation/" 
+            ]
+        ];
+        rr:predicateObjectMap [
+            rr:predicate eablock:value2;
+            rr:objectMap <FalconUMLS-Function>
+        ];      
+    ].
+
+<FalconUMLS-Function>
+    fnml:functionValue [
+        rml:logicalSource [ rml:source "/app/data/drugs.csv";
+        rml:referenceFormulation ql:CSV 
+                            ];
+        rr:predicateObjectMap [
+            rr:predicate fno:executes ;
+            rr:objectMap [ 
+                rr:constant eablock:falcon_UMLS_CUI_function 
             ]
         ];
         rr:predicateObjectMap [
