@@ -8,11 +8,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix base: <http://tib.de/ontario/mapping#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix eablock: <https://github.com/SDM-TIB/EABlock> .
 @prefix sdmkgc: <https://github.com/SDM-TIB/KGC/vocab/> .
 
 
 <drug_TriplesMap1>
-	rml:logicalSource [ rml:source "/app/data/drugs.csv";
+	rml:logicalSource [ rml:source "/data/drug.csv";
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
@@ -23,11 +26,5 @@
 		rr:predicate sdmkgc:drugLabel;
 		rr:objectMap [
 			rml:reference "DrugName";
-		]
-	];
-	rr:predicateObjectMap [
-		rr:predicate owl:sameAs;
-		rr:objectMap [
-			rr:template "{DBpediaURL}";
 		]
 	].
