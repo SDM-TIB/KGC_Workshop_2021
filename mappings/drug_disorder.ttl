@@ -18,7 +18,7 @@
 						rml:referenceFormulation ql:CSV 
 						];
 	rr:subjectMap [
-		rr:template "https://github.com/SDM-TIB/KGC/entity/{indication_name}";
+		rr:template "https://github.com/SDM-TIB/KGC/entity/{name}";
 		rr:class sdmkgc:Disorder
 	];
 	rr:predicateObjectMap [
@@ -84,17 +84,17 @@
         rr:predicateObjectMap [
             rr:predicate fno:executes ;
             rr:objectMap [ 
-                rr:constant eablock:concat2 
+                rr:constant sdmkgc:concat2 
             ]
         ];
         rr:predicateObjectMap [
-            rr:predicate eablock:value1;
+            rr:predicate sdmkgc:value1;
             rr:objectMap [ 
                 rr:constant "https://github.com/SDM-TIB/KGC/entity/" 
             ]
         ];
         rr:predicateObjectMap [
-            rr:predicate eablock:value2;
+            rr:predicate sdmkgc:value2;
             rr:objectMap <disorder_FalconUMLS-Function>
         ];      
     ].
@@ -107,11 +107,11 @@
         rr:predicateObjectMap [
             rr:predicate fno:executes ;
             rr:objectMap [ 
-                rr:constant eablock:falcon_UMLS_CUI_function 
+                rr:constant sdmkgc:falcon_UMLS_CUI_function 
             ]
         ];
         rr:predicateObjectMap [
-            rr:predicate eablock:value;
+            rr:predicate sdmkgc:value;
             rr:objectMap [ 
                 rml:reference "name" 
             ] 
@@ -129,18 +129,18 @@
         rr:predicateObjectMap [
             rr:predicate fno:executes ;
             rr:objectMap [ 
-                rr:constant eablock:concat2 
+                rr:constant sdmkgc:concat2 
             ]
         ];
         rr:predicateObjectMap [
-            rr:predicate eablock:value1;
+            rr:predicate sdmkgc:value1;
             rr:objectMap [ 
                 rr:constant "https://github.com/SDM-TIB/KGC/entity/" 
             ]
         ];
         rr:predicateObjectMap [
-            rr:predicate eablock:value2;
-            rr:objectMap <FalconUMLS-Function>
+            rr:predicate sdmkgc:value2;
+            rr:objectMap <drug_FalconUMLS-Function>
         ];      
     ].
 
@@ -152,11 +152,11 @@
         rr:predicateObjectMap [
             rr:predicate fno:executes ;
             rr:objectMap [ 
-                rr:constant eablock:falcon_UMLS_CUI_function 
+                rr:constant sdmkgc:falcon_UMLS_CUI_function 
             ]
         ];
         rr:predicateObjectMap [
-            rr:predicate eablock:value;
+            rr:predicate sdmkgc:value;
             rr:objectMap [ 
                 rml:reference "DrugName" 
             ] 

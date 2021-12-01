@@ -1,0 +1,101 @@
+DrugBankID,DrugName,CUI
+DB00001,Lepirudin,C0772394
+DB00002,Cetuximab,C0995188
+DB00003,Dornase alfa,C1135662
+DB00004,Denileukin diftitox,C1383469
+DB00005,Etanercept,C0717758
+DB00006,Bivalirudin,C0168273
+DB00007,Leuprolide,C0085272
+DB00008,Peginterferon alfa-2a,C0796545
+DB00009,Alteplase,C0032143
+DB00010,Sermorelin,C0142046
+DB00011,Interferon alfa-n1,C0699817
+DB00012,Darbepoetin alfa,C0937950
+DB00013,Urokinase,C0042071
+DB00014,Goserelin,C0120107
+DB00015,Reteplase,C0256103
+DB00016,Erythropoietin,C0014822
+DB00017,Salmon Calcitonin,C0073994
+DB00018,Interferon alfa-n3,C1621234
+DB00019,Pegfilgrastim,C1136535
+DB00020,Sargramostim,C0216231
+DB00021,Secretin,C0036534
+DB00022,Peginterferon alfa-2b,C0796545
+DB00023,Asparaginase Escherichia coli,C1269691
+DB00024,Thyrotropin Alfa,C2587204
+DB00025,"Antihemophilic factor, human recombinant",C2732002
+DB00026,Anakinra,C0245109
+DB00027,Gramicidin D,C0018160
+DB00028,Immune Globulin Human,C2702333
+DB00029,Anistreplase,C0078956
+DB00030,Insulin Human,C0795635
+DB00031,Tenecteplase,C0872913
+DB00032,Menotropins,C0025326
+DB00033,Interferon gamma-1b,C0021741
+DB00034,"Interferon Alfa-2a, Recombinant",C0021734
+DB00035,Desmopressin,C0011701
+DB00036,Coagulation factor VIIa Recombinant Human,C0005789
+DB00038,Oprelvekin,C0537670
+DB00039,Palifermin,C0677829
+DB00040,Glucagon recombinant,C0876232
+DB00041,Aldesleukin,C0218986
+DB00042,Botulinum Toxin Type B,C0006050
+DB00043,Omalizumab,C0966225
+DB00044,Lutropin alfa,C1271607
+DB00045,Lyme disease vaccine (recombinant OspA),C0134235
+DB00046,Insulin Lispro,C0293359
+DB00047,Insulin Glargine,C0907402
+DB00048,Collagenase clostridium histolyticum,C0009053
+DB00049,Rasburicase,C0937932
+DB00050,Cetrorelix,C0209366
+DB00051,Adalimumab,C1122087
+DB00052,Somatotropin,C0037663
+DB00053,Imiglucerase,C0291140
+DB00054,Abciximab,C0288672
+DB00055,Drotrecogin alfa,C1170000
+DB00056,Gemtuzumab ozogamicin,C1533699
+DB00057,Indium In-111 satumomab pendetide,C0209389
+DB00058,Alpha-1-proteinase inhibitor,C0002191
+DB00059,Pegaspargase,C0071568
+DB00060,Interferon beta-1a,C0254119
+DB00061,Pegademase bovine,C0164674
+DB00062,Human Serum Albumin,C0304925
+DB00063,Eptifibatide,C0253563
+DB00065,Infliximab,C0666743
+DB00066,Follitropin,C0733758
+DB00067,Vasopressin,C1705480
+DB00068,Interferon beta-1b,C0021747
+DB00069,Interferon alfacon-1,C0164613
+DB00070,Hyaluronidase,C0020197
+DB00071,Insulin Pork,C0770206
+DB00072,Trastuzumab,C0728747
+DB00073,Rituximab,C0393022
+DB00074,Basiliximab,C0676831
+DB00075,Muromonab,C0085379
+DB00076,Digoxin Immune Fab (Ovine),C4083129
+DB00078,Ibritumomab tiuxetan,C0877880
+DB00080,Daptomycin,C0057144
+DB00081,Tositumomab,C0879399
+DB00082,Pegvisomant,C0913469
+DB00083,Botulinum Toxin Type A,C0006050
+DB00085,Pancrelipase,C0770343
+DB00086,Streptokinase,C0038418
+DB00087,Alemtuzumab,C0383429
+DB00088,Alglucerase,C0102139
+DB00089,Capromab pendetide,C0529572
+DB00090,Laronidase,C1302054
+DB00091,Cyclosporine,C0010592
+DB00092,Alefacept,C0962603
+DB00093,Felypressin,C0015777
+DB00094,Urofollitropin,C0524639
+DB00095,Efalizumab,C1174995
+DB00097,Choriogonadotropin alfa,C0937609
+DB00098,Antithymocyte immunoglobulin (rabbit),C0359156
+DB00099,Filgrastim,C0210630
+DB00100,Coagulation Factor IX (Recombinant),C2826076
+DB00102,Becaplermin,C0379135
+DB00103,Agalsidase beta,C1137427
+DB00104,Octreotide,C0028833
+DB00105,"Interferon Alfa-2b, Recombinant",C0021735
+DB00106,Abarelix,C0965390
+DB00107,Oxytocin,C0030095
