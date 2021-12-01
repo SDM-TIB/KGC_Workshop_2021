@@ -1,10 +1,10 @@
 version: "2"
 services:
   KGC_Workshop_2021:
-    image: asakor/dils_2018_tutorial_image:latest
-    hostname: dils_2018_tutorial
-    container_name: dils_2018_tutorial
-    domainname: dils_2018
+    image: sdmtib/kgc_2021_tutorial:1.0
+    hostname: kgc_workshop_2021
+    container_name: kgc_workshop_2021
+    domainname: kgc_2021
     volumes:
       - ./data:/tutorial/data
     networks:

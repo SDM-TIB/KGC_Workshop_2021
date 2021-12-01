@@ -1,0 +1,5 @@
+Build the image:
+docker build -t sdmtib/kgc_2021_tutorial:1.0 .
+
+
+docker image push sdmtib/kgc_2021_tutorial:1.0
