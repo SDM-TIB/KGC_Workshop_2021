@@ -30,6 +30,7 @@
     rr:predicateObjectMap [
         rr:predicate sdmkgc:hasCUIAnnotation;
         rr:objectMap <disorder_UMLSFunction> ;
+	rr:datatype rr:IRI;
     ].	
 
 <drug>
@@ -49,6 +50,7 @@
     rr:predicateObjectMap [
         rr:predicate sdmkgc:hasCUIAnnotation;
         rr:objectMap <drug_UMLSFunction> ;
+	rr:datatype rr:IRI;
     ].
 
 <drug_disorder>
