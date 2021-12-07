@@ -22,7 +22,7 @@ def bioFalcon_call(term):
 
 
 
-f = open("../data/drug.csv", 'r',encoding="utf-8" )
+f = open("data/drug.csv", 'r',encoding="utf-8" )
 reader = csv.reader(f,delimiter=',')
 rows=list(reader)
 f.close()
@@ -37,7 +37,7 @@ for row in tqdm(drugs):
     row.append(cui)
 
     
-with open("../data/drugs.csv", "w", encoding="utf-8") as output:
+with open("data/drugs.csv", "w", encoding="utf-8") as output:
         writer = csv.writer(output, delimiter=',', lineterminator='\n')
         writer.writerow(file_header)
         for item in drugs:
